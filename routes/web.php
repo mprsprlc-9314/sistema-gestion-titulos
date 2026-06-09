@@ -21,6 +21,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/socios/crear', \App\Livewire\Socios\CrearSocio::class)->name('socios.create');
     Route::get('/socios/{id}', \App\Livewire\Socios\VerSocio::class)->name('socios.show');
 	Route::get('/socios/{id}/editar', \App\Livewire\Socios\EditarSocio::class)->name('socios.edit');
+	Route::get('/titulos', \App\Livewire\Titulos\ListarTitulos::class)->name('titulos.index');
+	Route::get('/titulos/crear', \App\Livewire\Titulos\CrearTitulo::class)->name('titulos.create');
+	Route::get('/titulos/{id}', \App\Livewire\Titulos\VerTitulo::class)->name('titulos.show');
+	Route::get('/titulos/{id}/editar', \App\Livewire\Titulos\EditarTitulo::class)->name('titulos.edit');
 });
 
 require __DIR__.'/auth.php';
