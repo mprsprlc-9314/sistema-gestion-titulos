@@ -24,6 +24,9 @@
 					<x-nav-link :href="route('transferencias.index')" :active="request()->routeIs('transferencias.*')">
 						{{ __('Transferencias') }}
 					</x-nav-link>
+					<x-nav-link :href="route('gravamenes.index')" :active="request()->routeIs('gravamenes.*')">
+						{{ __('Gravámenes') }}
+					</x-nav-link>
                 </div>
             </div>
 
