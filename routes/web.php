@@ -25,6 +25,8 @@ Route::middleware('auth')->group(function () {
 	Route::get('/titulos/crear', \App\Livewire\Titulos\CrearTitulo::class)->name('titulos.create');
 	Route::get('/titulos/{id}', \App\Livewire\Titulos\VerTitulo::class)->name('titulos.show');
 	Route::get('/titulos/{id}/editar', \App\Livewire\Titulos\EditarTitulo::class)->name('titulos.edit');
+	Route::get('/transferencias', \App\Livewire\Transferencias\ListarTransferencias::class)->name('transferencias.index');
+	Route::get('/transferencias/crear', \App\Livewire\Transferencias\CrearTransferencia::class)->name('transferencias.create');
 });
 
 require __DIR__.'/auth.php';
